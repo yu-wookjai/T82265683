@@ -24,7 +24,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Setup Kustomize
-      uses: imranismail/setup-kustomize@v1
+      uses: imranismail/setup-kustomize@v2
 
     - name: 'Gen Version'
       id: gen-version
@@ -32,7 +32,7 @@ jobs:
         echo "::set-output name=VERSION::`date +%Y%m%d%H%M`"
         
     - name: 'ACR login'
-      uses: azure/docker-login@v1
+      uses: azure/docker-login@v2
       with:
         login-server: ${{ secrets.BASEACR_LOGIN_SERVER  }}
         username: ${{ secrets.REGISTRY_USERNAME }}
@@ -44,7 +44,7 @@ jobs:
             docker tag ${{ secrets.BASEACR_LOGIN_SERVER  }}/${{ env.IMAGE_NAME }}:${{ steps.gen-version.outputs.VERSION }} ${{ secrets.STAPACR_LOGIN_SERVER  }}/${{ env.IMAGE_NAME }}:${{ steps.gen-version.outputs.VERSION }}
     
     - name: 'Push image'
-      uses: azure/docker-login@v1
+      uses: azure/docker-login@v2
       with:
         login-server: ${{ secrets.STAPACR_LOGIN_SERVER  }}
         username: ${{ secrets.REGISTRY_USERNAME }}
