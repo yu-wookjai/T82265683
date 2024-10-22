@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: my-82265683
+    name: my-T82265683
 spec:
     ports:
     - port: 8080 
     selector:
-        app: "82265683"
+        app: "T82265683"
