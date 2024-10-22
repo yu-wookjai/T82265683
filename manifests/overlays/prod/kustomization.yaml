@@ -1,7 +1,7 @@
 configMapGenerator:
 - files:
   - application.yml
-  name: cloud-sample-configmap
+  name: 82265683-configmap
 resources:
 - ../../base
 - pvc.yaml
@@ -10,7 +10,10 @@ patchesStrategicMerge:
 - ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+namespace: "82265683"
 namePrefix: prod-
 images:
+- name: cepgstapacr.azurecr.io/82265683
+  newTag: "202410210711"
 - name: cepgstapacr.azurecr.io/cloud-sample
-  newTag: "202408120727"
+  newTag: "202410090700"
