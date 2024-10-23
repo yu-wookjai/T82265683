@@ -14,7 +14,7 @@ spec:
           - mountPath: /mnt/t82265683
             name: "t82265683-volume"
             readOnly: false
-            subPath: t82265683
+            subPath: cloud-sample
           - mountPath: /config
             name: application-properties
             readOnly: true
