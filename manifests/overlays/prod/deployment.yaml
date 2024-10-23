@@ -11,10 +11,10 @@ spec:
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
-          - mountPath: /mnt/t82265683
+          - mountPath: /mnt/cloud-sample
             name: "t82265683-volume"
             readOnly: false
-            subPath: "t82265683"
+            subPath: cloud-sample
           - mountPath: /config
             name: application-properties
             readOnly: true
