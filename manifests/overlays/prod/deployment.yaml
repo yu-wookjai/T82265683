@@ -12,7 +12,7 @@ spec:
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
           - mountPath: /mnt/t82265683
-            name: "t82265683-volume"
+            name: "82265683-volume"
             readOnly: false
             subPath: cloud-sample
           - mountPath: /config
@@ -20,12 +20,12 @@ spec:
             readOnly: true
                           
       volumes:
-      - name: "t82265683-volume"
+      - name: "82265683-volume"
         persistentVolumeClaim:
           claimName: cepg-aa-std-pvc
       - name: application-properties
         configMap:
-          name: "t82265683-configmap"
+          name: "82265683-configmap"
           items:
             - key: application.yml
               path: application.yml
