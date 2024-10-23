@@ -14,6 +14,4 @@ namespace: t82265683
 namePrefix: prod-
 images:
 - name: cepgstapacr.azurecr.io/t82265683
-  newTag: "202410090700"
-- name: cepgstapacr.azurecr.io/t82265683
-  newTag: "202410230644"
+  newTag: "202410230648"
