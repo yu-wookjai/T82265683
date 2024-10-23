@@ -34,14 +34,14 @@
 	<repositories>
 		<repository>
 		<id>github</id>
-		<url>https://maven.pkg.github.com/yu-wookjai/T82265683</url>
+		<url>https://maven.pkg.github.com/yu-wookjai/cloud-sample</url>
 		</repository>
 	</repositories>
 	<distributionManagement>
 		<repository>
 		<id>github</id>
 		<name>GitHub self-study Apache Maven Packages</name>
-		<url>https://maven.pkg.github.com/yu-wookjai/T82265683</url>
+		<url>https://maven.pkg.github.com/yu-wookjai/cloud-sample</url>
 		</repository>
 	</distributionManagement>
 
