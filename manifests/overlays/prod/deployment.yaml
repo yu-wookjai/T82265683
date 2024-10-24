@@ -7,25 +7,25 @@ spec:
   template:
     spec:
       containers:
-        - name: "t82265683" 
+        - name: "82265683" 
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
           - mountPath: /mnt/t82265683
-            name: "t82265683-volume"
+            name: "82265683-volume"
             readOnly: false
-            subPath: "t82265683"
+            subPath: "82265683"
           - mountPath: /config
             name: application-properties
             readOnly: true
                           
       volumes:
-      - name: "t82265683-volume"
+      - name: "82265683-volume"
         persistentVolumeClaim:
           claimName: cepg-aa-std-pvc
       - name: application-properties
         configMap:
-          name: "t82265683-configmap"
+          name: "82265683-configmap"
           items:
             - key: application.yml
               path: application.yml
