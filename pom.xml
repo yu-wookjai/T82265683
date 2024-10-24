@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<!-- ������Ʈ�� ���� -->
 	<!-- <name>cloudsample</name> -->
-	<name>cloudsample-T82265683</name>
+	<name>cloudsample-t82265683</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -34,14 +34,14 @@
 	<repositories>
 		<repository>
 		<id>github</id>
-		<url>https://maven.pkg.github.com/yu-wookjai/cloud-sample</url>
+		<url>https://maven.pkg.github.com/yu-wookjai/T82265683</url>
 		</repository>
 	</repositories>
 	<distributionManagement>
 		<repository>
 		<id>github</id>
 		<name>GitHub self-study Apache Maven Packages</name>
-		<url>https://maven.pkg.github.com/yu-wookjai/cloud-sample</url>
+		<url>https://maven.pkg.github.com/yu-wookjai/T82265683</url>
 		</repository>
 	</distributionManagement>
 
